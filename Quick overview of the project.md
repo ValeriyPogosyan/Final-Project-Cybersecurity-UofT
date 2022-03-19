@@ -1,7 +1,7 @@
 # Final-Project-Cybersecurity-UofT
 
 Offensive Report.md
-[Offensive Report]('Offensive Report.md')
+![Offensive Report](Offensive%20Report.md)
 
 Defensive Report.md
 ![Defensive Report](/Defensive Report.md)
