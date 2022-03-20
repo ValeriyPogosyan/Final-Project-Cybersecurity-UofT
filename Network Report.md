@@ -11,8 +11,6 @@ You must inspect your traffic capture to answer the following questions:
 
      `10.6.12.12`
      
-     ![frank-n-ted-dc.frank-n-ted.com](images/frank_ted_DC.png)
-
     ![frank-n-ted-dc.frank-n-ted.com](images/frank_ted_DC_IP.png)
     
 3. What is the name of the malware downloaded to the 10.6.12.203 machine?
