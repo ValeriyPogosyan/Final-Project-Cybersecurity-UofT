@@ -23,7 +23,7 @@ The following machines were identified on the network:
 - Capstone
   - **Operating System**: `Ubuntu 18.04`
   - **Purpose**: `The machine hosting FileBeat, MetricBeat, and PacketBeat`
-  - **IP Address**: `192.168.1.115`
+  - **IP Address**: `192.168.1.105`
 - Target 1
   - **Operating System**: `Linux 3.16.0-6-amd64`
   - **Purpose**: `Web Server used as a target for attacks`
