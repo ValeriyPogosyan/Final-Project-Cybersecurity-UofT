@@ -5,7 +5,6 @@
 - Description of Targets
 - Monitoring the Targets
 - Patterns of Traffic & Behavior
-- Suggestions for Going Further
 
 ### Network Topology
 ![Final Project Network_Topology](/Network_Topology.JPG)
