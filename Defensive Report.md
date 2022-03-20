@@ -48,19 +48,19 @@ Excessive HTTP Errors is implemented as follows:
   - **Metric**: http.response.status_code
   - **Threshold**: above 400 in last 5 minutes
   - **Vulnerability Mitigated**: Brute force attack 
-  - **Reliability**: ?
+  - **Reliability**:  Medium: Generates a few false positives.
 
 #### CPU Usage Monitor
 CPU Usage Monitor is implemented as follows:
   - **Metric**: system.process.cpu.total.pct
   - **Threshold**: over 0.5 in the last 5 minutes
   - **Vulnerability Mitigated**: DoS attack / Brute force attack
-  - **Reliability**: ?
+  - **Reliability**: Medium: Generates few false positives
 
 #### HTTP request size monitor
 HTTP request size monitor is implemented as follows:
   - **Metric**: http.request.bytes
   - **Threshold**: is above 3500 for the last 1 min
   - **Vulnerability Mitigated**: Potential file upload/download of files 
-  - **Reliability**: ?
+  - **Reliability**: Medium - high reliability. Most standard web / http traffic will not trigger the alert.
 
