@@ -47,7 +47,7 @@ You must inspect your traffic capture to answer the following questions:
 
 1. Find the following information about the machine with IP address `10.0.0.201`:
 - MAC address:          00:16:17:18:66:c8
-    - Windows username:     elmer.blanco
+    - Windows username:     `elmer.blanco`
     - OS version:           Windows 10 / 11 based on browser http user agent
      
          ```bash
