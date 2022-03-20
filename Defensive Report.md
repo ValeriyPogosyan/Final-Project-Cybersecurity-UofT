@@ -11,15 +11,23 @@
 ![Final Project Network_Topology](/Network_Topology.JPG)
 
 The following machines were identified on the network:
-- Name of VM 1
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Name of VM 2
-  - **Operating System**:
-  - **Purpose**:
-  - **IP Address**:
-- Etc.
+
+- Kali
+  - **Operating System**: Linux 5.4.0-kali3-amd64
+  - **Purpose**: The machine from where we attack the target 
+  - **IP Address**: 192.168.1.90
+- ELK
+  - **Operating System**: Linux 4.15.0-99-generic
+  - **Purpose**: The machine used to host Kibana
+  - **IP Address**: 192.168.1.100
+- Capstone
+  - **Operating System**: Ubuntu 18.04
+  - **Purpose**: The machine hosting FileBeat, MetricBeat, and PacketBeat
+  - **IP Address**: 192.168.1.115
+- target1
+  - **Operating System**: Linux 3.16.0-6-amd64
+  - **Purpose**: Web Server used as a target for attacks
+  - **IP Address**: 192.168.1.110
 
 ### Description of Targets
 _TODO: Answer the questions below._
