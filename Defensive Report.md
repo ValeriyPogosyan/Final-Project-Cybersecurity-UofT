@@ -13,25 +13,25 @@
 The following machines were identified on the network:
 
 - Kali
-  - **Operating System**: Linux 5.4.0-kali3-amd64
-  - **Purpose**: The machine from where we attack the target 
-  - **IP Address**: 192.168.1.90
+  - **Operating System**: `Linux 5.4.0-kali3-amd64`
+  - **Purpose**: `The machine from where we attack the target`
+  - **IP Address**: `192.168.1.90`
 - ELK
-  - **Operating System**: Linux 4.15.0-99-generic
-  - **Purpose**: The machine used for monitoring the target with Kibana logging events
-  - **IP Address**: 192.168.1.100
+  - **Operating System**: `Linux 4.15.0-99-generic`
+  - **Purpose**: `The machine used for monitoring the target with Kibana logging events`
+  - **IP Address**: `192.168.1.100`
 - Capstone
-  - **Operating System**: Ubuntu 18.04
-  - **Purpose**: The machine hosting FileBeat, MetricBeat, and PacketBeat
-  - **IP Address**: 192.168.1.115
+  - **Operating System**: `Ubuntu 18.04`
+  - **Purpose**: `The machine hosting FileBeat, MetricBeat, and PacketBeat`
+  - **IP Address**: `192.168.1.115`
 - Target 1
-  - **Operating System**: Linux 3.16.0-6-amd64
-  - **Purpose**: Web Server used as a target for attacks
-  - **IP Address**: 192.168.1.110
+  - **Operating System**: `Linux 3.16.0-6-amd64`
+  - **Purpose**: `Web Server used as a target for attacks`
+  - **IP Address**: `192.168.1.110`
 - ML-RefVm-684427
-  - **Operating System**: Windows 10
-  - **Purpose**: Hosts the Hyper-V manager which containers the other VMs. Also used to view Kibana.
-  - **IP Address**: 192.168.1.1
+  - **Operating System**: `Windows 10`
+  - **Purpose**: `Hosts the Hyper-V manager which containers the other VMs, also used to view Kibana`
+  - **IP Address**: `192.168.1.1`
 
 ### Description of Targets
 
@@ -45,22 +45,22 @@ Traffic to these services should be carefully monitored. To this end, we have im
 
 #### Excessive HTTP Errors
 Excessive HTTP Errors is implemented as follows:
-  - **Metric**: http.response.status_code
-  - **Threshold**: above 400 in last 5 minutes
-  - **Vulnerability Mitigated**: Brute force attack 
-  - **Reliability**:  Medium: Generates a few false positives.
+  - **Metric**: `http.response.status_code`
+  - **Threshold**: `above 400 in last 5 minutes`
+  - **Vulnerability Mitigated**: `Brute force attack`
+  - **Reliability**:  Medium: `Generates a few false positives`
 
 #### CPU Usage Monitor
 CPU Usage Monitor is implemented as follows:
-  - **Metric**: system.process.cpu.total.pct
-  - **Threshold**: over 0.5 in the last 5 minutes
-  - **Vulnerability Mitigated**: DoS attack / Brute force attack
-  - **Reliability**: Medium: Generates few false positives
+  - **Metric**: `system.process.cpu.total.pct`
+  - **Threshold**: `over 0.5 in the last 5 minutes`
+  - **Vulnerability Mitigated**: `DoS attack / Brute force attack`
+  - **Reliability**: `Medium: Generates few false positives`
 
 #### HTTP request size monitor
 HTTP request size monitor is implemented as follows:
-  - **Metric**: http.request.bytes
-  - **Threshold**: is above 3500 for the last 1 min
-  - **Vulnerability Mitigated**: Potential file upload/download of files 
-  - **Reliability**: Medium - high reliability. Most standard web / http traffic will not trigger the alert.
+  - **Metric**: `http.request.bytes`
+  - **Threshold**: `is above 3500 for the last 1 min`
+  - **Vulnerability Mitigated**: `Potential file upload/download of files`
+  - **Reliability**: `Medium - high reliability. Most standard web / http traffic will not trigger the alert`
 
