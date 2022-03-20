@@ -56,4 +56,4 @@ You must inspect your traffic capture to answer the following questions:
 2. Which torrent file did the user download?
 
   - ip.src == 10.0.0.201 && http.request.method == GET
-    - /bt/btdownload.php?type=torrent&file=Betty_Boop_Rhythm_on_the_Reservation.avi.torrent
+    - /bt/btdownload.php?type=torrent&file=`Betty_Boop_Rhythm_on_the_Reservation.avi.torrent`
