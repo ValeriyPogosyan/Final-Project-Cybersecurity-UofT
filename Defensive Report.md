@@ -8,7 +8,7 @@
 - Suggestions for Going Further
 
 ### Network Topology
-_TODO: Fill out the information below._
+![Final Project Network_Topology](/Network_Topology.JPG)
 
 The following machines were identified on the network:
 - Name of VM 1
