@@ -18,21 +18,24 @@ The following machines were identified on the network:
   - **IP Address**: 192.168.1.90
 - ELK
   - **Operating System**: Linux 4.15.0-99-generic
-  - **Purpose**: The machine used to host Kibana
+  - **Purpose**: The machine used for monitoring the target with Kibana logging events
   - **IP Address**: 192.168.1.100
 - Capstone
   - **Operating System**: Ubuntu 18.04
   - **Purpose**: The machine hosting FileBeat, MetricBeat, and PacketBeat
   - **IP Address**: 192.168.1.115
-- target1
+- Target 1
   - **Operating System**: Linux 3.16.0-6-amd64
   - **Purpose**: Web Server used as a target for attacks
   - **IP Address**: 192.168.1.110
+- ML-RefVm-684427
+  - **Operating System**: Windows 10
+  - **Purpose**: Hosts the Hyper-V manager which containers the other VMs. Also used to view Kibana.
+  - **IP Address**: 192.168.1.1
 
 ### Description of Targets
-_TODO: Answer the questions below._
 
-The target of this attack was: `Target 1` (TODO: IP Address).
+The target of this attack was: `Target 1` with IP Address: 192.168.1.110.
 
 Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are possible ports of entry for attackers. As such, the following alerts have been implemented:
 
@@ -40,42 +43,24 @@ Target 1 is an Apache web server and has SSH enabled, so ports 80 and 22 are pos
 
 Traffic to these services should be carefully monitored. To this end, we have implemented the alerts below:
 
-#### Name of Alert 1
-_TODO: Replace `Alert 1` with the name of the alert._
+#### Excessive HTTP Errors
+Excessive HTTP Errors is implemented as follows:
+  - **Metric**: http.response.status_code
+  - **Threshold**: above 400 in last 5 minutes
+  - **Vulnerability Mitigated**: Brute force attack 
+  - **Reliability**: ?
 
-Alert 1 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+#### CPU Usage Monitor
+CPU Usage Monitor is implemented as follows:
+  - **Metric**: system.process.cpu.total.pct
+  - **Threshold**: over 0.5 in the last 5 minutes
+  - **Vulnerability Mitigated**: DoS attack / Brute force attack
+  - **Reliability**: ?
 
-#### Name of Alert 2
-Alert 2 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
+#### HTTP request size monitor
+HTTP request size monitor is implemented as follows:
+  - **Metric**: http.request.bytes
+  - **Threshold**: is above 3500 for the last 1 min
+  - **Vulnerability Mitigated**: Potential file upload/download of files 
+  - **Reliability**: ?
 
-#### Name of Alert 3
-Alert 3 is implemented as follows:
-  - **Metric**: TODO
-  - **Threshold**: TODO
-  - **Vulnerability Mitigated**: TODO
-  - **Reliability**: TODO: Does this alert generate lots of false positives/false negatives? Rate as low, medium, or high reliability.
-
-_TODO Note: Explain at least 3 alerts. Add more if time allows._
-
-### Suggestions for Going Further (Optional)
-_TODO_: 
-- Each alert above pertains to a specific vulnerability/exploit. Recall that alerts only detect malicious behavior, but do not stop it. For each vulnerability/exploit identified by the alerts above, suggest a patch. E.g., implementing a blocklist is an effective tactic against brute-force attacks. It is not necessary to explain _how_ to implement each patch.
-
-The logs and alerts generated during the assessment suggest that this network is susceptible to several active threats, identified by the alerts above. In addition to watching for occurrences of such threats, the network should be hardened against them. The Blue Team suggests that IT implement the fixes below to protect the network:
-- Vulnerability 1
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 2
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
-- Vulnerability 3
-  - **Patch**: TODO: E.g., _install `special-security-package` with `apt-get`_
-  - **Why It Works**: TODO: E.g., _`special-security-package` scans the system for viruses every day_
