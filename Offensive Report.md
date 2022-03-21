@@ -13,12 +13,17 @@ Nmap scan results for each machine reveal the below services and OS details:
  $ nmap -sV 192.168.1.110
   ```
  ![nmap1](/Screenshots/Capture1.JPG)
-
+ 
+```bash
+ $ nmap --script vuln 192.168.1.110
+  ```
+  ![nmap1](/Screenshots/Vulnerabilities.JPG)
 
 This scan identifies the services below as potential points of entry:
 - Target 1
-  - List of
-  - Exposed Services
+  - 22/tcp ssh Potential remote shell, brute force/dictionary attacks
+  - 80/tcp http Potential command injection, brute force/dictionary attack
+  - 111/tcp rpcbind Potential recon and file upload/download
 
 _TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
 
