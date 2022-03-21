@@ -44,7 +44,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
   - `flag2.txt`: _{fc3fd58dcdad9ab23faca6e9a36e581c}_
     - **Exploit Used**
       - flag 2 coud be found in directory shown below:
-        ![nmap1](/Screenshots/flag2.JPG)
+        ![Flag2](/Screenshots/Flag2.JPG)
   - `flag3.txt`: _{afc01ab56b50591e7dccf93122770cd2}_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
