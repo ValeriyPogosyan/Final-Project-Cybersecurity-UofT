@@ -25,15 +25,11 @@ This scan identifies the services below as potential points of entry:
   - 80/tcp http Potential command injection, brute force/dictionary attack
   - 111/tcp rpcbind Potential recon and file upload/download
 
-_TODO: Fill out the list below. Include severity, and CVE numbers, if possible._
-
 The following vulnerabilities were identified on each target:
 - Target 1
-  - List of
-  - Critical
-  - Vulnerabilities
-
-_TODO: Include vulnerability scan results to prove the identified vulnerabilities._
+  - Weak passwords
+  - MySQL Db vulnerability
+  - Privilege escalation using Python
 
 ### Exploitation
 _TODO: Fill out the details below. Include screenshots where possible._
@@ -48,3 +44,13 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
     - **Exploit Used**
       - _TODO: Identify the exploit used_
       - _TODO: Include the command run_
+  - `flag3.txt`: _TODO: Insert `flag1.txt` hash value_
+    - **Exploit Used**
+      - _TODO: Identify the exploit used_
+      - _TODO: Include the command run_
+  - `flag4.txt`: _TODO: Insert `flag2.txt` hash value_
+    - **Exploit Used**
+      - _TODO: Identify the exploit used_
+      - _TODO: Include the command run_
+
+
