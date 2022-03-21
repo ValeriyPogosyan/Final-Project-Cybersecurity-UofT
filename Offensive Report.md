@@ -37,12 +37,14 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - Target 1
   - `flag1.txt`:  _{b9bbcb33e11b80be759c4e844862482d}_
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+         - Use “wpscan --url http://192.168.1.110:80/wordpress -e u”
+           To discover users Steven and Michael
+         - Used “ssh michael@192.168.1.110” and guessed password “michael” to gain access to michaels account
+           Navigated to /var/www/html and used “grep -R flag1” to find flag 1
   - `flag2.txt`: _{fc3fd58dcdad9ab23faca6e9a36e581c}_
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - flag 2 coud be found in directory shown below:
+        ![nmap1](/Screenshots/flag2.JPG)
   - `flag3.txt`: _{afc01ab56b50591e7dccf93122770cd2}_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
