@@ -37,6 +37,7 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
 - Target 1
   - `flag1.txt`:  _{b9bbcb33e11b80be759c4e844862482d}_
     - **Exploit Used**
+         - Weak passwords
          - Use “wpscan --url http://192.168.1.110:80/wordpress -e u”
            To discover users Steven and Michael
          - Used “ssh michael@192.168.1.110” and guessed password “michael” to gain access to michaels account
