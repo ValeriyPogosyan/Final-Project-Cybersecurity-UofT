@@ -32,23 +32,22 @@ The following vulnerabilities were identified on each target:
   - Privilege escalation using Python
 
 ### Exploitation
-_TODO: Fill out the details below. Include screenshots where possible._
 
 The Red Team was able to penetrate `Target 1` and retrieve the following confidential data:
 - Target 1
-  - `flag1.txt`: _TODO: Insert `flag1.txt` hash value_
+  - `flag1.txt`:  _{b9bbcb33e11b80be759c4e844862482d}_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
       - _TODO: Include the command run_
-  - `flag2.txt`: _TODO: Insert `flag2.txt` hash value_
+  - `flag2.txt`: _{fc3fd58dcdad9ab23faca6e9a36e581c}_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
       - _TODO: Include the command run_
-  - `flag3.txt`: _TODO: Insert `flag1.txt` hash value_
+  - `flag3.txt`: _{afc01ab56b50591e7dccf93122770cd2}_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
       - _TODO: Include the command run_
-  - `flag4.txt`: _TODO: Insert `flag2.txt` hash value_
+  - `flag4.txt`: _{715dea6c055b9fe3337544932f2941ce}_
     - **Exploit Used**
       - _TODO: Identify the exploit used_
       - _TODO: Include the command run_
