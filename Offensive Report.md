@@ -43,15 +43,20 @@ The Red Team was able to penetrate `Target 1` and retrieve the following confide
            Navigated to /var/www/html and used “grep -R flag1” to find flag 1
   - `flag2.txt`: _{fc3fd58dcdad9ab23faca6e9a36e581c}_
     - **Exploit Used**
+      - Use the same exploit as for flag1 - just navigate one directory up
       - flag 2 coud be found in directory shown below:
+      
         ![Flag2](/Screenshots/Flag2.JPG)
+        
   - `flag3.txt`: _{afc01ab56b50591e7dccf93122770cd2}_
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - MySQL Db vulnerability
+
+        ![Flag3](/Screenshots/Flag34_1.JPG)
+
   - `flag4.txt`: _{715dea6c055b9fe3337544932f2941ce}_
     - **Exploit Used**
-      - _TODO: Identify the exploit used_
-      - _TODO: Include the command run_
+      - Privilege escalation using Python
 
-
+        ![Flag4](/Screenshots/flag4.JPG)
+      
